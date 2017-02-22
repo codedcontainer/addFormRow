@@ -1,0 +1,39 @@
+.add-remove-button, .remove-button { 
+          top: 9px;
+    left: 4px;
+    height: 14px;
+    width: 14px;
+    display: block;
+    /* removed position absolute because this does not work outside of a table */
+    /* added styles for add users on the users/roles page */
+    margin-right: 10px;
+    margin-bottom: 10px; 
+    color: white;
+    float: left; 
+    border: 2px solid white;
+    border-radius: 14px;
+    box-shadow: 0 0 3px #444;
+    box-sizing: content-box;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 14px;
+    content: '+';
+    background-color: #337ab7;
+   }
+   .remove-button{
+       background-color: #d33333;
+   }
+     .remove-button:before{ 
+          content: '-';
+     
+     }
+
+   .add-remove-button:before { 
+      content: '+';
+    }
+
+  
+    #repeat-group .add-remove-button, #repeat-group .remove-button{ 
+      position: absolute;
+      left: -16px; 
+     }
